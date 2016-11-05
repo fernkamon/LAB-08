@@ -769,6 +769,67 @@ fri|	Friday	|Blue
 sat|	Saturday	|Purple
 อื่นๆ|	 ---|	---
 
+Code
+```
+using System;
+using System.IO;
+public class switchLearning
+{
+    public static void Main()
+    {
+        Console.Write("Input your day name (sun, mon, tue, wed, thu, fri, sat) : ");
+        string gradeString = Console.ReadLine();
+        string message, meg;
+        Console.WriteLine("");
+        Console.WriteLine("         Answer");
+        switch (gradeString)
+        {
+            case "sun":
+                message = "Sunday";
+                meg = "color Red";
+                break;
+            case "mon":
+                message = "Monday";
+                meg = "color Yellow";
+                break;
+            case "tue":
+                message = "Tuesday";
+                meg = "color Pink";
+                break;
+            case "wed":
+                message = "Wednesday";
+                meg = "color Green";
+                break;
+            case "thu":
+                message = "Thursday";
+                meg = "color Orange";
+                break;
+            case "fai":
+                message = "Faiday";
+                meg = "color Light blue";
+                break;
+            case "sat":
+                message = "Saturday";
+                meg = "color Purple";
+                break;
+            default:
+                message = "---";
+                meg = "---";
+                break;
+        }
+        Console.WriteLine("");
+        Console.WriteLine(message);
+        Console.WriteLine(meg);
+    }
+}
+```
+ผลลัพธ์
+  
+  ![](https://github.com/fernkamon/LAB-08/blob/master/SUN.JPG)
+  
+  ![](https://github.com/fernkamon/LAB-08/blob/master/mon.JPG)
+  
+  ![](https://github.com/fernkamon/LAB-08/blob/master/thu.JPG)
 
 ##Reference
 เนื้อหาในส่วนนี้เป็นอ้างอิงสำหรับการเขียนโปรแกรม
