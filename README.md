@@ -423,6 +423,51 @@ execute next line
 1.	ถ้าค่าที่ผู้ใช้ป้อน มากกว่า ค่าที่สุ่มมาได้ ให้พิมพ์ ```“Too Hight, You loss!!”``` ออกทางหน้าจอ
 2.	ถ้าค่าที่ผู้ใช้ป้อน น้อยกว่า ค่าที่สุ่มมาได้ ให้พิมพ์ ```“Too Low, You loss!!”```ออกทางหน้าจอ
 3.	ถ้าค่าที่ผู้ใช้ป้อน เท่ากับ ค่าที่สุ่มมาได้ ให้พิมพ์ ```“Okay, You win!!”``` ออกทางหน้าจอ
+  
+  CODE
+  ```
+  using System;
+using System.IO;
+namespace RandomNumber
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Random 0 - 9");
+            Console.WriteLine("Pleace Input Number ");
+            Console.WriteLine("");
+            Console.Write("number : ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("");
+            
+ Console.WriteLine("---------------------------");
+            Random random = new Random();
+            int randomNumber1 = random.Next(0, 9);
+            Console.WriteLine("Random  = {0} ", randomNumber1);
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("");
+             if (a > randomNumber1)
+            {
+                Console.WriteLine("Too Hight, You loss!!");
+            }
+            if (a < randomNumber1)
+            {
+                Console.WriteLine("Too Low, You loss!!");
+            }
+            if(a == randomNumber1 )
+            Console.WriteLine("Okay, You win!!");
+        }
+    }  
+}
+  ```
+  
+  ![](https://github.com/fernkamon/LAB-08/blob/master/high.JPG)
+  
+  ![](https://github.com/fernkamon/LAB-08/blob/master/loss.JPG)
+  
+  ![](https://github.com/fernkamon/LAB-08/blob/master/ok.JPG)
+  
 
 ###1.2.2.	คำสั่ง ```if…else```
 
