@@ -173,6 +173,10 @@ public class TryCatch
      }
  }
 ```
+  ไม่มีข้อผิดพลาด และได้ผลลัพธ์ ดังนี้
+  
+  ![]()
+
 ###2.
 ``` csharp
 using System;
@@ -187,6 +191,15 @@ public class TryCatch
      }
  }
 ```
+  
+  มีข้อผิดพลาด แต่ใช้คำสั่งดัง Code และผลลัพธ์ต่อไปนี้
+  Code
+  
+  ```
+  
+  ```
+  ![]()
+  
 ###3.
 ``` csharp
 using System;
